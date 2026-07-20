@@ -1,0 +1,22 @@
+{
+  "name": "boutique-apartman-ripenda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Izvedbeni elaborat i tehnička dokumentacija za adaptaciju istarske kamene kuće u Ripendi (Labin).",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "docx",
+    "izvedbeni-elaborat",
+    "ripenda",
+    "boutique-apartman",
+    "renovation"
+  ],
+  "author": "Dragoslav / Sandra",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "docx": "^9.0.3"
+  }
+}

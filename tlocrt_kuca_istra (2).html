@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Tlocrt - Adaptacija kamene kuće u Istri (finalne varijante)</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;background:#f4f2ee;margin:0;padding:24px;color:#222;}
+  .sheet{background:#fff;max-width:1050px;margin:0 auto 40px;padding:28px 32px;border:1px solid #ccc;box-shadow:0 1px 4px rgba(0,0,0,.1);}
+  h1{font-size:20px;text-align:center;margin:0 0 4px;letter-spacing:.5px;}
+  h2{font-size:15px;text-align:center;margin:0 0 18px;color:#555;font-weight:normal;}
+  .opt-title{background:#2c3e50;color:#fff;padding:6px 14px;font-size:14px;font-weight:bold;margin:26px 0 10px;}
+  .opt-title.b1{background:#1e6b4f;}
+  .opt-title.b2{background:#8a4b2c;}
+  table{border-collapse:collapse;font-size:12.5px;width:100%;margin-bottom:14px;}
+  th,td{border:1px solid #bbb;padding:4px 8px;text-align:left;}
+  th{background:#eee;}
+  .grid2{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;}
+  .grid2>div{flex:1;min-width:260px;}
+  .notes{font-size:12px;color:#333;line-height:1.5;}
+  .notes li{margin-bottom:3px;}
+  svg{width:100%;height:auto;display:block;background:#fff;}
+  .legend-box{font-size:11.5px;}
+  .footer{font-size:11px;color:#888;text-align:center;margin-top:10px;}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+<h1>KUĆA U ISTRI &mdash; ADAPTACIJA</h1>
+<h2>Tri finalne varijante &middot; mjerilo 1:50 &middot; ovojnica 716 x 435 cm &middot; pod izjednačen u cijeloj kući (bez stepenice)</h2>
+
+<div class="opt-title">OPCIJA A &mdash; soba sprijeda, WC "krade" stražnji dio sobe, spojen u L s kuhinjom</div>
+<p class="notes">Soba je sprijeda, puna širina (394 cm), ali kraća dubina (295 cm umjesto pune 421 cm) &ndash; stražnji dio sobe je "ukraden" za WC. Kuhinja (sprijeda desno) i WC (straga lijevo, iza sobe) čine zajedno obrnuto "L" &ndash; u WC se ulazi kroz produžetak/hodnik koji izlazi iz kuhinje duž stražnjeg zida. Klizna vrata su i na sobi (prema tom produžetku/WC-u) i na samom WC-u, da se ne gubi prostor na otvaranje krila. Balkonska vrata sobe gledaju sprijeda, s malim ograđenim privatnim izlazom/terasicom odmah ispred &ndash; lijep detalj, direktan izlaz iz sobe van.</p>
+
+<svg viewBox="-90 -95 900 600" role="img">
+<title>Tlocrt opcija A</title>
+<desc>Soba sprijeda puna širina 394cm dubine 295cm s balkonskim vratima i ograđenom terasicom sprijeda, kuhinja sprijeda desno, WC straga lijevo iza sobe spojen s kuhinjom preko produžetka/hodnika duž stražnjeg zida u obliku obrnutog L, klizna vrata na sobi i na WC-u.</desc>
+
+<rect x="0" y="0" width="716" height="435" fill="#efe9df" stroke="#8a7a63" stroke-width="14"/>
+<!-- partitions -->
+<rect x="394" y="0" width="10" height="435" fill="#8a7a63"/> <!-- soba/kuhinja stupac -->
+<rect x="0" y="295" width="404" height="10" fill="#8a7a63"/> <!-- soba / WC+prolaz -->
+<rect x="230" y="295" width="10" height="140" fill="#8a7a63"/> <!-- WC desni zid -->
+
+<!-- room fills -->
+<rect x="7" y="7" width="387" height="281" fill="#eef2f7"/> <!-- soba -->
+<rect x="404" y="7" width="305" height="421" fill="#fbf3e3"/> <!-- kuhinja puna dubina desno -->
+<rect x="7" y="305" width="216" height="123" fill="#e3f0ec"/> <!-- WC -->
+<rect x="240" y="305" width="157" height="123" fill="#f2ede2"/> <!-- prolaz/produžetak kuhinje -->
+
+<!-- private fenced patio in front of bedroom balcony door -->
+<rect x="40" y="-70" width="280" height="63" fill="none" stroke="#4a7fa8" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="180" y="-40" font-size="9" text-anchor="middle" fill="#4a7fa8">ograđena privatna terasica</text>
+
+<!-- entrance door front wall (into kitchen) -->
+<rect x="500" y="-7" width="90" height="14" fill="#fff"/>
+<path d="M500,7 A90,90 0 0 1 590,7" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="545" y="-14" font-size="9" text-anchor="middle">ULAZ</text>
+
+<!-- bedroom balcony door front wall -->
+<rect x="60" y="-7" width="220" height="14" fill="#bcd9ee"/>
+<line x1="170" y1="-7" x2="170" y2="7" stroke="#4a7fa8" stroke-width="1"/>
+<text x="170" y="18" font-size="9" text-anchor="middle" fill="#4a7fa8">balkonska vrata do poda</text>
+
+<!-- kitchen back window -->
+<rect x="500" y="421" width="120" height="14" fill="#bcd9ee"/>
+
+<!-- sliding door soba -> prolaz -->
+<rect x="140" y="290" width="80" height="10" fill="#fff" stroke="#333" stroke-width="1"/>
+<line x1="140" y1="295" x2="220" y2="295" stroke="#333" stroke-width="3" stroke-dasharray="4 3"/>
+<text x="180" y="282" font-size="8.5" text-anchor="middle">šiber vrata</text>
+
+<!-- sliding door WC -->
+<rect x="220" y="330" width="10" height="60" fill="#fff" stroke="#333" stroke-width="1"/>
+<line x1="225" y1="330" x2="225" y2="390" stroke="#333" stroke-width="3" stroke-dasharray="4 3"/>
+<text x="205" y="360" font-size="8" text-anchor="middle" transform="rotate(-90 205 360)">šiber</text>
+
+<!-- kitchen L-extension continues to prolaz, open connection -->
+<text x="318" y="360" font-size="8.5" text-anchor="middle" fill="#8a6d3a">produžetak kuhinje (prolaz do WC-a)</text>
+
+<!-- SOBA furniture -->
+<rect x="90" y="120" width="160" height="90" fill="#e3d9c8" stroke="#8a6d3a"/><text x="170" y="160" font-size="10" text-anchor="middle">bračni krevet</text><text x="170" y="174" font-size="9" text-anchor="middle">160x200</text>
+<rect x="350" y="60" width="20" height="200" fill="#d9c9a3" stroke="#8a6d3a"/><text x="360" y="160" font-size="8" text-anchor="middle" transform="rotate(-90 360 160)">ormar 220 cm</text>
+<text x="195" y="230" font-size="14" font-weight="bold" text-anchor="middle">SOBA</text>
+<text x="195" y="248" font-size="10.5" text-anchor="middle">390 x 290 cm &middot; 11.3 m²</text>
+
+<!-- KUHINJA furniture -->
+<rect x="690" y="20" width="14" height="380" fill="#cfd8dc" stroke="#607d8b"/><text x="682" y="210" font-size="8" text-anchor="middle" transform="rotate(-90 682 210)">hladnjak/sudoper/ploča/visoki elementi</text>
+<rect x="440" y="180" width="120" height="80" fill="#e6d5b8" stroke="#8a6d3a"/><text x="500" y="224" font-size="10" text-anchor="middle">stol 80x120</text>
+<text x="555" y="115" font-size="14" font-weight="bold" text-anchor="middle">KUHINJA</text>
+<text x="555" y="133" font-size="10.5" text-anchor="middle">305 x 421 cm &middot; ≈12.8 m²</text>
+<text x="555" y="149" font-size="9" text-anchor="middle" fill="#666">(uklj. produžetak/prolaz do WC-a)</text>
+
+<!-- WC fixtures -->
+<rect x="20" y="315" width="50" height="50" fill="#dff0ea" stroke="#2c7a63"/><text x="45" y="343" font-size="8" text-anchor="middle">tuš 80x80</text>
+<circle cx="115" cy="335" r="13" fill="#fff" stroke="#2c7a63"/><text x="115" y="361" font-size="8" text-anchor="middle">WC</text>
+<rect x="160" y="322" width="45" height="32" fill="#fff" stroke="#2c7a63"/><text x="182" y="365" font-size="8" text-anchor="middle">umivaonik</text>
+<rect x="20" y="378" width="55" height="22" fill="#dfe6ea" stroke="#607d8b"/><text x="47" y="393" font-size="8" text-anchor="middle">perilica</text>
+<text x="115" y="300" font-size="11" font-weight="bold" text-anchor="middle" transform="translate(0,10)"></text>
+<text x="115" y="425" font-size="10.5" text-anchor="middle">216 x 123 cm &middot; ≈2.7 m²</text>
+<text x="115" y="440" font-size="8.5" text-anchor="middle" fill="#555">WC</text>
+
+<!-- dimension lines -->
+<line x1="0" y1="-85" x2="716" y2="-85" stroke="#333" stroke-width="1"/>
+<line x1="0" y1="-91" x2="0" y2="-79" stroke="#333" stroke-width="1"/>
+<line x1="716" y1="-91" x2="716" y2="-79" stroke="#333" stroke-width="1"/>
+<text x="358" y="-93" font-size="12" text-anchor="middle">716 cm</text>
+
+<line x1="-35" y1="0" x2="-35" y2="435" stroke="#333" stroke-width="1"/>
+<line x1="-41" y1="0" x2="-29" y2="0" stroke="#333" stroke-width="1"/>
+<line x1="-41" y1="435" x2="-29" y2="435" stroke="#333" stroke-width="1"/>
+<text x="-50" y="217" font-size="12" text-anchor="middle" transform="rotate(-90 -50 217)">435 cm</text>
+
+<text x="358" y="-8" font-size="11" text-anchor="middle" fill="#666">PREDNJA STRANA (ulaz)</text>
+<text x="358" y="450" font-size="11" text-anchor="middle" fill="#666">STRAŽNJA STRANA</text>
+</svg>
+
+<div class="grid2" style="margin-top:14px;">
+<div>
+<table>
+<tr><th>Prostorija</th><th>Dimenzije</th><th>Površina</th></tr>
+<tr><td>Soba</td><td>390 x 290 cm</td><td>11.3 m²</td></tr>
+<tr><td>Kuhinja (uklj. produžetak)</td><td>305 x 421 cm</td><td>≈12.8 m²</td></tr>
+<tr><td>WC</td><td>216 x 123 cm</td><td>≈2.7 m²</td></tr>
+<tr><th>Ukupno neto</th><th colspan="2">≈ 26.8 m²</th></tr>
+</table>
+</div>
+<div class="legend-box">
+<strong>Zašto ova opcija ima smisla:</strong>
+<ul class="notes">
+<li>Soba postaje mali "suite" &ndash; zaseban ulaz/izlaz kroz vlastita balkonska vrata i ograđenu terasicu</li>
+<li>Kuhinja i WC dijele isti "krak" kuće (desni zid) &ndash; instalacije idu najkraćim putem</li>
+<li>Šiber vrata na sobi i na WC-u ne oduzimaju prostor za otvaranje krila</li>
+<li>Manja soba (11.1 m² umjesto 16.6 m²) je kompromis za dobivanje WC-a bez hodnika</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="sheet">
+<div class="opt-title b1">OPCIJA B &mdash; soba straga (zrcalna slika opcije A)</div>
+<p class="notes">Ista logika kao opcija A, samo okrenuto: soba je straga, puna širina (390 cm), dubina 290 cm &ndash; potpuno isti čist pravokutnik kao u opciji A, samo s balkonskim vratima do poda na <strong>stražnjem</strong> zidu (pogled na vrt). Kuhinja ostaje sprijeda desno, puna dubina, direktan ulaz. WC + produžetak/prolaz iz kuhinje sada su sprijeda lijevo, do samog ulaza &ndash; praktično i za goste. Klizna vrata na sobi i na WC-u, kao i u opciji A.</p>
+
+<svg viewBox="-90 -95 900 600" role="img">
+<title>Tlocrt opcija B</title>
+<desc>Zrcalna slika opcije A: soba straga puna širina 390cm dubine 290cm s balkonskim vratima na stražnjem zidu, kuhinja sprijeda desno puna dubina, WC i produžetak kuhinje sprijeda lijevo do ulaza.</desc>
+
+<rect x="0" y="0" width="716" height="435" fill="#efe9df" stroke="#8a7a63" stroke-width="14"/>
+<rect x="394" y="0" width="10" height="435" fill="#8a7a63"/> <!-- soba/kuhinja stupac -->
+<rect x="0" y="130" width="404" height="10" fill="#8a7a63"/> <!-- WC+prolaz / soba -->
+<rect x="230" y="0" width="10" height="140" fill="#8a7a63"/> <!-- WC desni zid -->
+
+<rect x="7" y="7" width="216" height="123" fill="#e3f0ec"/> <!-- WC front-left -->
+<rect x="240" y="7" width="157" height="123" fill="#f2ede2"/> <!-- prolaz -->
+<rect x="7" y="140" width="387" height="288" fill="#eef2f7"/> <!-- soba straga -->
+<rect x="404" y="7" width="305" height="421" fill="#fbf3e3"/> <!-- kuhinja puna dubina -->
+
+<!-- entrance -->
+<rect x="500" y="-7" width="90" height="14" fill="#fff"/>
+<path d="M500,7 A90,90 0 0 1 590,7" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="545" y="-14" font-size="9" text-anchor="middle">ULAZ</text>
+
+<!-- WC existing low window front wall -->
+<rect x="60" y="-7" width="120" height="14" fill="#bcd9ee"/>
+<text x="120" y="-14" font-size="8.5" text-anchor="middle" fill="#4a7fa8">postojeći nizak prozor</text>
+
+<!-- bedroom balcony door back wall -->
+<rect x="60" y="421" width="220" height="14" fill="#bcd9ee"/>
+<line x1="170" y1="421" x2="170" y2="435" stroke="#4a7fa8" stroke-width="1"/>
+<text x="170" y="450" font-size="9" text-anchor="middle" fill="#4a7fa8">balkonska vrata do poda &middot; pogled na vrt</text>
+
+<!-- kitchen back window -->
+<rect x="500" y="421" width="120" height="14" fill="#bcd9ee"/>
+
+<!-- sliding door soba -->
+<rect x="140" y="125" width="80" height="10" fill="#fff" stroke="#333" stroke-width="1"/>
+<line x1="140" y1="130" x2="220" y2="130" stroke="#333" stroke-width="3" stroke-dasharray="4 3"/>
+<text x="180" y="152" font-size="8.5" text-anchor="middle">šiber vrata</text>
+
+<!-- sliding door WC -->
+<rect x="220" y="45" width="10" height="60" fill="#fff" stroke="#333" stroke-width="1"/>
+<line x1="225" y1="45" x2="225" y2="105" stroke="#333" stroke-width="3" stroke-dasharray="4 3"/>
+<text x="205" y="75" font-size="8" text-anchor="middle" transform="rotate(-90 205 75)">šiber</text>
+
+<text x="318" y="75" font-size="8.5" text-anchor="middle" fill="#8a6d3a">produžetak kuhinje (prolaz do WC-a)</text>
+
+<!-- SOBA furniture -->
+<rect x="90" y="290" width="160" height="90" fill="#e3d9c8" stroke="#8a6d3a"/><text x="170" y="330" font-size="10" text-anchor="middle">bračni krevet</text><text x="170" y="344" font-size="9" text-anchor="middle">160x200</text>
+<rect x="350" y="160" width="20" height="200" fill="#d9c9a3" stroke="#8a6d3a"/><text x="360" y="260" font-size="8" text-anchor="middle" transform="rotate(-90 360 260)">ormar 220 cm</text>
+<text x="195" y="410" font-size="14" font-weight="bold" text-anchor="middle">SOBA</text>
+<text x="195" y="428" font-size="10.5" text-anchor="middle">390 x 290 cm &middot; 11.3 m²</text>
+
+<!-- KUHINJA furniture -->
+<rect x="690" y="20" width="14" height="380" fill="#cfd8dc" stroke="#607d8b"/><text x="682" y="210" font-size="8" text-anchor="middle" transform="rotate(-90 682 210)">hladnjak/sudoper/ploča/visoki elementi</text>
+<rect x="440" y="180" width="120" height="80" fill="#e6d5b8" stroke="#8a6d3a"/><text x="500" y="224" font-size="10" text-anchor="middle">stol 80x120</text>
+<text x="555" y="115" font-size="14" font-weight="bold" text-anchor="middle">KUHINJA</text>
+<text x="555" y="133" font-size="10.5" text-anchor="middle">305 x 421 cm &middot; ≈12.8 m²</text>
+<text x="555" y="149" font-size="9" text-anchor="middle" fill="#666">(uklj. produžetak/prolaz do WC-a)</text>
+
+<!-- WC fixtures -->
+<rect x="20" y="20" width="50" height="50" fill="#dff0ea" stroke="#2c7a63"/><text x="45" y="48" font-size="8" text-anchor="middle">tuš 80x80</text>
+<circle cx="115" cy="40" r="13" fill="#fff" stroke="#2c7a63"/><text x="115" y="66" font-size="8" text-anchor="middle">WC</text>
+<rect x="160" y="27" width="45" height="32" fill="#fff" stroke="#2c7a63"/><text x="182" y="70" font-size="8" text-anchor="middle">umivaonik</text>
+<rect x="20" y="83" width="55" height="22" fill="#dfe6ea" stroke="#607d8b"/><text x="47" y="98" font-size="8" text-anchor="middle">perilica</text>
+<text x="115" y="115" font-size="10.5" text-anchor="middle">216 x 123 cm &middot; ≈2.7 m²</text>
+<text x="115" y="130" font-size="8.5" text-anchor="middle" fill="#555">WC</text>
+
+<!-- dimension lines -->
+<line x1="0" y1="-85" x2="716" y2="-85" stroke="#333" stroke-width="1"/>
+<line x1="0" y1="-91" x2="0" y2="-79" stroke="#333" stroke-width="1"/>
+<line x1="716" y1="-91" x2="716" y2="-79" stroke="#333" stroke-width="1"/>
+<text x="358" y="-93" font-size="12" text-anchor="middle">716 cm</text>
+
+<line x1="-35" y1="0" x2="-35" y2="435" stroke="#333" stroke-width="1"/>
+<text x="-50" y="217" font-size="12" text-anchor="middle" transform="rotate(-90 -50 217)">435 cm</text>
+
+<text x="358" y="-8" font-size="11" text-anchor="middle" fill="#666">PREDNJA STRANA (ulaz)</text>
+<text x="358" y="450" font-size="11" text-anchor="middle" fill="#666">STRAŽNJA STRANA</text>
+</svg>
+
+<div class="grid2" style="margin-top:14px;">
+<div>
+<table>
+<tr><th>Prostorija</th><th>Dimenzije</th><th>Površina</th></tr>
+<tr><td>WC + prolaz</td><td>216 x 123 cm</td><td>≈2.7 m²</td></tr>
+<tr><td>Kuhinja (uklj. produžetak)</td><td>305 x 421 cm</td><td>≈12.8 m²</td></tr>
+<tr><td>Soba</td><td>390 x 290 cm</td><td>11.3 m²</td></tr>
+<tr><th>Ukupno neto</th><th colspan="2">≈ 26.8 m²</th></tr>
+</table>
+</div>
+<div class="legend-box">
+<strong>Razlika naspram opcije A:</strong>
+<ul class="notes">
+<li>Ista veličina sobe (390x290, čist pravokutnik) &ndash; nema kompromisa u kvadraturi</li>
+<li>Balkonska vrata gledaju na stražnju stranu (vrt) umjesto na ulaz &ndash; mirnije, privatnije</li>
+<li>WC je odmah do ulaza (sprijeda lijevo) &ndash; brže dostupan gostima, ne treba prolaziti kroz cijelu kuću</li>
+<li>Nedostatak: soba nema direktan izlaz van (nema tog "suite" osjećaja kao u opciji A) jer joj je balkon okrenut prema privatnom dvorištu, ne prema ulazu</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
