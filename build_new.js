@@ -586,6 +586,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buf => {
-  fs.writeFileSync("/mnt/user-data/outputs/Izvedbeni_elaborat_Ripenda_R2.docx", buf);
+  fs.writeFileSync("/mnt/user-data/outputs/Izvedbeni_elaborat_Ripenda_R3.docx", buf);
   console.log("WRITTEN OK", buf.length);
 }).catch(e => { console.error("ERROR", e); process.exit(1); });
