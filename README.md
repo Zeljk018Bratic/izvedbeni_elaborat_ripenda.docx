@@ -97,6 +97,31 @@ Margins: None (ili Minimum)
 Background graphics: ON
 Preporučeni nazivi izlaza:
 
+# Boutique Apartman Ripenda — Izvedbeni Elaborat
+
+Službeni repozitorij za izvedbeni elaborat projekta adaptacije autohtone istarske kamene kuće u Ripendi (Labin).
+
+## Finalna verzija (važeća)
+- **Izvedbeni_elaborat_Ripenda_R3_final.pdf**
+
+## Brzi pristup
+- `index.html` — početna stranica predaje
+- `Prilozi_Instalacije_i_Fasade.html` — grafički prilozi (HTML)
+
+## Otvaranje lokalno
+```bash
+python -m http.server 8080
+```
+Zatim:
+`http://localhost:8080/index.html`
+
+## Ispis u PDF
+Ctrl+P → Save as PDF → Landscape → Scale 100% → Background graphics ON
+
+## Napomena
+A-101/A-102/A-103/A-301 datoteke su pomoćni wrapper linkovi.
+Važeći finalni dokument za predaju je R3 PDF naveden iznad.
+
 A-101_Tlocrt.pdf
 A-102_Instalacije_Voda_Odvod.pdf
 A-103_Instalacije_Elektro.pdf
