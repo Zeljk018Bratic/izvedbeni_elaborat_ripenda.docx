@@ -3,78 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ripenda | Grafički prilozi</title>
+  <title>Ripenda | Finalna predaja</title>
   <style>
-    :root{
-      --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8;
-      --accent:#22c55e; --accent2:#38bdf8; --warn:#f59e0b;
-    }
-    *{box-sizing:border-box}
     body{
-      margin:0; font-family:Segoe UI,Roboto,Arial,sans-serif;
-      background:linear-gradient(135deg,#0b1020,#111827 45%,#0b1020);
-      color:var(--text); min-height:100vh; display:flex; align-items:center; justify-content:center;
-      padding:24px;
+      margin:0; font-family:Arial,sans-serif; background:#0f172a; color:#e5e7eb;
+      display:flex; align-items:center; justify-content:center; min-height:100vh;
     }
-    .wrap{width:min(920px,100%)}
-    .card{
-      background:rgba(17,24,39,.88); border:1px solid #1f2937; border-radius:18px;
-      padding:22px; box-shadow:0 12px 30px rgba(0,0,0,.35);
+    .box{
+      width:min(760px,92%); background:#111827; border:1px solid #334155;
+      border-radius:14px; padding:24px;
     }
-    h1{margin:0 0 8px; font-size:28px}
-    p{margin:0 0 16px; color:var(--muted)}
-    .grid{
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:14px;
+    h1{margin:0 0 8px}
+    p{color:#94a3b8}
+    .btn{
+      display:block; text-decoration:none; color:#fff; background:#1f2937;
+      border:1px solid #475569; border-radius:10px; padding:14px; margin:10px 0;
+      font-weight:700;
     }
-    a.btn, button.btn{
-      display:block; width:100%; text-decoration:none; color:white; font-weight:600;
-      background:#1f2937; border:1px solid #334155; border-radius:12px; padding:14px 12px; cursor:pointer;
-      transition:.18s ease;
-    }
-    a.btn:hover, button.btn:hover{transform:translateY(-1px); border-color:#475569; background:#243244}
-    .a101{outline:2px solid rgba(56,189,248,.25)}
-    .a102{outline:2px solid rgba(34,197,94,.25)}
-    .a103{outline:2px solid rgba(245,158,11,.25)}
-    .a301{outline:2px solid rgba(168,85,247,.25)}
-    .tools{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
-    .small{font-size:13px; color:var(--muted); margin-top:14px}
-    code{background:#0b1220; border:1px solid #1e293b; border-radius:8px; padding:2px 6px}
+    .btn:hover{background:#273449}
+    .note{font-size:13px;color:#94a3b8;margin-top:14px}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>Ripenda — Grafički prilozi</h1>
-      <p>Brzi pristup sheetovima + print workflow (A4/PDF).</p>
+  <main class="box">
+    <h1>Boutique Apartman Ripenda — Finalna predaja</h1>
+    <p>Jedinstvene ulazne točke za pregled i ispis.</p>
 
-      <div class="grid">
-        <a class="btn a101" href="./A-101.html" target="_blank" rel="noopener">Otvori A-101 (Tlocrt)</a>
-        <a class="btn a102" href="./A-102.html" target="_blank" rel="noopener">Otvori A-102 (Voda/Odvod)</a>
-        <a class="btn a103" href="./A-103.html" target="_blank" rel="noopener">Otvori A-103 (Elektro)</a>
-        <a class="btn a301" href="./A-301.html" target="_blank" rel="noopener">Otvori A-301 (Fasade)</a>
-      </div>
+    <a class="btn" href="./Izvedbeni_elaborat_Ripenda_R3_final.pdf" target="_blank" rel="noopener">
+      Otvori FINAL PDF (R3)
+    </a>
 
-      <div class="tools">
-        <button class="btn" onclick="openAll()">Otvori sva 4 sheeta</button>
-        <button class="btn" onclick="printHint()">Print upute (2 koraka)</button>
-      </div>
+    <a class="btn" href="./Prilozi_Instalacije_i_Fasade.html" target="_blank" rel="noopener">
+      Otvori priloge (HTML)
+    </a>
 
-      <div class="small">
-        Lokalno pokretanje: <code>python -m http.server 8080</code> pa otvori <code>http://localhost:8080/</code><br/>
-        U svakom sheetu: <code>Ctrl+P</code> → Save as PDF → Landscape → Scale 100% → Background graphics ON.
-      </div>
+    <div class="note">
+      Preporuka za ispis: Ctrl+P → Save as PDF → Landscape → Scale 100% → Background graphics ON.
     </div>
-  </div>
-
-  <script>
-    function openAll(){
-      ["A-101.html","A-102.html","A-103.html","A-301.html"].forEach(p =>
-        window.open("./"+p, "_blank", "noopener")
-      );
-    }
-    function printHint(){
-      alert("1) Otvori sheet\n2) Ctrl+P → Save as PDF → Landscape → Scale 100% → Background graphics ON");
-    }
-  </script>
+  </main>
 </body>
 </html>
