@@ -65,3 +65,41 @@ Nakon pokretanja build skripte, u root direktoriju nastaje:
 ## Napomena za izvođača Dragoslava
 
 Svi tehnički opisi, zone i instalacijske mikro-lokacije postavljeni su konzistentno u jednoj stvarnoj orijentaciji prostora. Repozitorij i generirani dokument **ne sadrže konfliktne mirror-image (Spiegelverkehrt) podatke**.
+
+HTML pregled i ispis grafičkih priloga
+Repo sada sadrži mini dashboard i odvojene ulazne točke za sheetove:
+
+index.html — glavni dashboard
+A-101.html — wrapper za A-101
+A-102.html — wrapper za A-102
+A-103.html — wrapper za A-103
+A-301.html — wrapper za A-301
+Prilozi_Instalacije_i_Fasade.html — glavni sadržaj priloga
+Kako otvoriti projekt (HTML)
+Opcija A — lokalno (preporučeno)
+U root folderu projekta pokreni:
+
+python -m http.server 8080
+Zatim otvori:
+
+http://localhost:8080/index.html
+Opcija B — direktno iz repoa
+Otvori index.html na GitHubu i koristi Raw prikaz (ili GitHub Pages ako je uključen).
+
+Kako isprintati u PDF
+Otvori željeni sheet (A-101, A-102, A-103, A-301) preko index.html
+Pritisni Ctrl + P
+Postavke:
+Destination: Save as PDF
+Layout: Landscape
+Scale: 100%
+Margins: None (ili Minimum)
+Background graphics: ON
+Preporučeni nazivi izlaza:
+
+A-101_Tlocrt.pdf
+A-102_Instalacije_Voda_Odvod.pdf
+A-103_Instalacije_Elektro.pdf
+A-301_Fasade.pdf
+Napomena
+A-101/A-102/A-103/A-301 su wrapper stranice koje preusmjeravaju na sekcije unutar Prilozi_Instalacije_i_Fasade.html putem anchor linkova (#A-101, #A-102, itd.).
